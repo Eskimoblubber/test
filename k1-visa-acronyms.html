@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-1 Visa Acronyms & Process Explained (2026) | K1 Visa Kit</title>
+  <meta name="description" content="Decode common K-1 visa acronyms like NOA1, NOA2, NVC, RFE, and CEAC. Understand the high-level K-1 process from petition to entry." />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary-blue:#2563eb;
+      --dark-blue:#1e3a8a;
+      --success-green:#10b981;
+
+      --text-dark:#1e293b;
+      --text-medium:#475569;
+      --text-light:#64748b;
+
+      --bg-light:#f8fafc;
+      --bg-white:#ffffff;
+      --border-color:#e2e8f0;
+
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:'Outfit',sans-serif;
+      color:var(--text-dark);
+      line-height:1.7;
+      background:var(--bg-white);
+    }
+    a{color:var(--primary-blue);text-decoration:none;}
+    a:hover{color:var(--dark-blue);}
+
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+    .container-narrow{max-width:860px;margin:0 auto;padding:0 24px;}
+
+    /* Header with Navigation */
+    header {
+        background: var(--bg-white);
+        border-bottom: 1px solid var(--border-color);
+        padding: 16px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        flex-shrink: 0;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--text-dark);
+    }
+
+    /* Main Navigation */
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px 16px;
+        color: var(--text-medium);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+    }
+
+    nav a:hover {
+        color: var(--text-dark);
+        background: var(--bg-light);
+    }
+
+    nav a.active {
+        color: var(--primary-blue);
+        font-weight: 600;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .member-login {
+        padding: 10px 18px;
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        background: transparent;
+    }
+
+    .member-login:hover {
+        color: var(--text-dark);
+        border-color: var(--text-medium);
+    }
+
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 28px;
+        background: var(--primary-blue);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+    }
+
+    .cta-button:hover {
+        background: var(--dark-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .cta-button-secondary {
+        background: transparent;
+        color: var(--primary-blue);
+        border: 2px solid var(--primary-blue);
+        box-shadow: none;
+    }
+
+    .cta-button-secondary:hover {
+        background: var(--primary-blue);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .mobile-menu-toggle span {
+        width: 24px;
+        height: 2px;
+        background: var(--text-dark);
+        transition: all 0.3s ease;
+    }
+
+    .member-access-mobile {
+        display: none;
+    }
+
+    @media (max-width: 968px) {
+        nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            flex-direction: column;
+            gap: 4px;
+            box-shadow: var(--shadow-md);
+        }
+
+        nav.open {
+            display: flex;
+        }
+
+        nav a {
+            width: 100%;
+            text-align: left;
+            padding: 12px 16px;
+        }
+
+        .mobile-menu-toggle {
+            display: flex;
+        }
+
+        .header-actions {
+            gap: 8px;
+        }
+
+        .member-login {
+            display: none;
+        }
+
+        .member-access-mobile {
+            display: block !important;
+        }
+    }
+
+    /* Hero */
+    .hero{
+      background:linear-gradient(135deg, #f8fafc 0%, #e8ecf1 100%);
+      padding:64px 0 56px;
+    }
+    .hero .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-weight:700;
+      color:var(--text-medium);
+      background:#fff;
+      border:1px solid var(--border-color);
+      padding:10px 14px;
+      border-radius:999px;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.9rem;
+    }
+    .hero h1{
+      margin-top:18px;
+      font-size:3rem;
+      font-weight:800;
+      line-height:1.15;
+      letter-spacing:-0.03em;
+    }
+    .hero h1 .highlight{color:var(--primary-blue);}
+    .hero p{
+      margin-top:14px;
+      color:var(--text-medium);
+      font-size:1.12rem;
+      max-width:760px;
+    }
+    .hero .cta-row{
+      margin-top:26px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    /* Content */
+    main{padding:56px 0 70px;background:var(--bg-white);}
+    .section{
+      margin-top:34px;
+    }
+    .section:first-child{
+      margin-top:0;
+    }
+    .card{
+      background:var(--bg-light);
+      border:1px solid var(--border-color);
+      border-radius:16px;
+      padding:28px;
+    }
+    .card.white{
+      background:#fff;
+    }
+    .card + .card{margin-top:16px;}
+    .section-title{
+      font-size:1.6rem;
+      font-weight:800;
+      letter-spacing:-0.02em;
+      margin-bottom:10px;
+    }
+    .section-sub{
+      color:var(--text-medium);
+      margin-top:2px;
+      line-height:1.6;
+    }
+
+    /* Intro text */
+    .intro-text{
+      font-size:1.05rem;
+      line-height:1.75;
+      color:var(--text-medium);
+    }
+    .intro-text p{
+      margin-bottom:16px;
+    }
+    .intro-text p:last-child{
+      margin-bottom:0;
+    }
+
+    /* Acronym list */
+    .acronym-list{
+      list-style:none;
+      display:grid;
+      gap:18px;
+    }
+    .acronym-item{
+      padding:18px;
+      background:#fff;
+      border:1px solid var(--border-color);
+      border-radius:12px;
+      transition: all 0.2s ease;
+    }
+    .acronym-item:hover{
+      box-shadow: var(--shadow-sm);
+      border-color: var(--primary-blue);
+    }
+    .acronym-term{
+      font-weight:700;
+      font-size:1.15rem;
+      color:var(--primary-blue);
+      margin-bottom:6px;
+    }
+    .acronym-full{
+      font-size:0.95rem;
+      color:var(--text-medium);
+      font-weight:600;
+      margin-bottom:8px;
+    }
+    .acronym-definition{
+      color:var(--text-medium);
+      line-height:1.6;
+    }
+
+    /* Process flow */
+    .process-flow{
+      list-style:none;
+      display:grid;
+      gap:14px;
+    }
+    .flow-step{
+      padding:20px;
+      background:#fff;
+      border:1px solid var(--border-color);
+      border-radius:12px;
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+    }
+    .flow-number{
+      flex-shrink:0;
+      width:32px;
+      height:32px;
+      background:var(--primary-blue);
+      color:#fff;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      font-size:0.95rem;
+    }
+    .flow-content{
+      flex:1;
+    }
+    .flow-label{
+      font-weight:700;
+      font-size:1.05rem;
+      color:var(--text-dark);
+      margin-bottom:4px;
+    }
+    .flow-description{
+      color:var(--text-medium);
+      line-height:1.6;
+      font-size:0.95rem;
+    }
+
+    /* Callout boxes */
+    .callout{
+      display:flex;
+      gap:14px;
+      padding:18px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+    .callout.blue{
+      background:rgba(37,99,235,0.08);
+      border:1px solid rgba(37,99,235,0.2);
+    }
+    .callout .icon{
+      flex-shrink:0;
+      width:24px;
+      height:24px;
+      background:var(--primary-blue);
+      color:#fff;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      font-size:0.85rem;
+    }
+    .callout h3{
+      font-size:1rem;
+      font-weight:700;
+      margin-bottom:6px;
+    }
+    .callout p{
+      font-size:0.95rem;
+      color:var(--text-medium);
+      line-height:1.6;
+    }
+
+    /* Disclaimer */
+    .disclaimer-box{
+      background:var(--bg-light);
+      border:1px solid var(--border-color);
+      border-radius:12px;
+      padding:24px;
+      margin-top:40px;
+    }
+    .disclaimer-box h3{
+      font-size:1.1rem;
+      font-weight:700;
+      margin-bottom:12px;
+      color:var(--text-dark);
+    }
+    .disclaimer-box p{
+      color:var(--text-medium);
+      line-height:1.7;
+      margin-bottom:12px;
+      font-size:0.95rem;
+    }
+    .disclaimer-box p:last-child{
+      margin-bottom:0;
+    }
+
+    /* Footer */
+    footer{
+      background:var(--bg-light);
+      border-top:1px solid var(--border-color);
+      padding:32px 0;
+    }
+    .footrow{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:16px;
+      font-size:0.9rem;
+      color:var(--text-medium);
+    }
+    .footrow a{
+      color:var(--text-medium);
+      text-decoration:none;
+      transition:color 0.2s;
+    }
+    .footrow a:hover{
+      color:var(--primary-blue);
+    }
+    .footer-updated{
+      margin-top:12px;
+      font-size:0.85rem;
+      color:var(--text-light);
+      text-align:center;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1{
+        font-size:2.2rem;
+      }
+      .section-title{
+        font-size:1.35rem;
+      }
+      .card{
+        padding:20px;
+      }
+    }
+  
+        footer {
+            padding: 40px 0;
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        footer a:hover {
+            opacity: 1;
+        }
+
+        .footer-links {
+            margin-top: 16px;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-updated {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+      <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="10" fill="#2563eb" opacity="0.1"/>
+                        <path d="M12 20L18 26L28 14" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">K1 Visa Kit</span>
+                </a>
+
+                <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="mainNav">
+                    <a href="index.html">Home</a>
+                    <a href="k1-visa-checklist.html">I-129F Checklist</a>
+                    <a href="k1-visa-acronyms.html" class="active">Acronyms</a>
+                    <a href="common-i129f-mistakes-2026.html">Common Mistakes</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="member-login.html" class="member-access-mobile">Member Access</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="member-login.html" class="member-login" title="For existing customers">Member Access</a>
+                    <a href="https://k1visakit.gumroad.com/l/uprod" target="_blank" class="cta-button">Get the Kit</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <section class="hero">
+    <div class="container-narrow">
+      <span class="eyebrow">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Free resource
+      </span>
+
+      <h1>K‑1 Visa <span class="highlight">Acronyms & Process</span> Explained</h1>
+      <p>Decode the alphabet soup of K‑1 visa terms. This guide explains common acronyms and walks through the high‑level process from petition to entry.</p>
+
+      <div class="cta-row">
+        <a class="cta-button" href="#acronyms">View Acronyms</a>
+        <a class="cta-button cta-button-secondary" href="#process">Process Overview</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container-narrow">
+      
+      <section class="card white">
+        <div class="intro-text">
+          <p>The K‑1 visa process comes with its own language. Terms like NOA1, NOA2, RFE, NVC, and CEAC appear constantly in forums, guides, and official communications. If you're new to the process, these acronyms can feel overwhelming.</p>
+          <p>This page breaks down the most common K‑1 acronyms you'll encounter and explains how they fit into the overall process. Understanding these terms helps you navigate official documents, track your case status, and communicate clearly with USCIS and the consulate.</p>
+        </div>
+      </section>
+
+      <section class="section" id="acronyms">
+        <div class="card">
+          <div class="section-title">Common K‑1 Visa Acronyms</div>
+          <p class="section-sub">These are the most frequently used terms in the K‑1 visa process. Each acronym represents a specific form, notice, or stage in the journey from petition to entry.</p>
+
+          <ul class="acronym-list" style="margin-top:24px;">
+            <li class="acronym-item">
+              <div class="acronym-term">K‑1</div>
+              <div class="acronym-full">Nonimmigrant Visa for Fiancé(e)</div>
+              <div class="acronym-definition">The K‑1 visa allows a foreign fiancé(e) of a U.S. citizen to enter the United States for the purpose of marriage. The couple must marry within 90 days of entry.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">I‑129F</div>
+              <div class="acronym-full">Petition for Alien Fiancé(e)</div>
+              <div class="acronym-definition">The official form U.S. citizens file with USCIS to initiate the K‑1 visa process. This petition establishes the relationship and requests authorization for the foreign fiancé(e) to apply for a K‑1 visa.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">NOA1</div>
+              <div class="acronym-full">Notice of Action (Receipt Notice)</div>
+              <div class="acronym-definition">The first notice USCIS sends after receiving your I‑129F petition. NOA1 confirms USCIS received your filing, includes your case receipt number, and indicates your petition is in the queue for processing.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">NOA2</div>
+              <div class="acronym-full">Notice of Action (Approval Notice)</div>
+              <div class="acronym-definition">The approval notice USCIS issues when your I‑129F petition is approved. NOA2 signals that USCIS has reviewed your case and authorized the next step with the National Visa Center and the consulate.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">RFE</div>
+              <div class="acronym-full">Request for Evidence</div>
+              <div class="acronym-definition">A notice USCIS sends when they need additional documentation or clarification before making a decision on your petition. An RFE includes specific instructions about what to submit and a deadline for response.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">NVC</div>
+              <div class="acronym-full">National Visa Center</div>
+              <div class="acronym-definition">The processing center that receives approved I‑129F petitions from USCIS and forwards them to the appropriate U.S. embassy or consulate abroad. The NVC assigns a case number and coordinates the transfer of case files.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">CEAC</div>
+              <div class="acronym-full">Consular Electronic Application Center</div>
+              <div class="acronym-definition">The online system managed by the Department of State where K‑1 visa applicants complete the DS‑160 form and where consulates track visa application status.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">AOS</div>
+              <div class="acronym-full">Adjustment of Status</div>
+              <div class="acronym-definition">The process of applying for lawful permanent resident status (green card) after entering the U.S. on a K‑1 visa and marrying the U.S. citizen petitioner. This is filed using Form I‑485.</div>
+            </li>
+
+            <li class="acronym-item">
+              <div class="acronym-term">POE</div>
+              <div class="acronym-full">Port of Entry</div>
+              <div class="acronym-definition">The airport or border crossing where the K‑1 visa holder first enters the United States. Customs and Border Protection officers at the POE review visa documentation and grant admission.</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="card">
+          <div class="section-title">How the K‑1 Process Flows</div>
+          <p class="section-sub">The K‑1 visa follows a sequential path through multiple government agencies. Here's the high‑level overview of how these steps connect.</p>
+
+          <ol class="process-flow" style="margin-top:24px;">
+            <li class="flow-step">
+              <div class="flow-number">1</div>
+              <div class="flow-content">
+                <div class="flow-label">File I‑129F Petition</div>
+                <div class="flow-description">The U.S. citizen petitioner files Form I‑129F with USCIS to establish the relationship and request approval to bring their foreign fiancé(e) to the United States.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">2</div>
+              <div class="flow-content">
+                <div class="flow-label">Receive NOA1</div>
+                <div class="flow-description">USCIS sends a receipt notice confirming they received the petition. This notice includes a case receipt number used to track processing status.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">3</div>
+              <div class="flow-content">
+                <div class="flow-label">USCIS Reviews Petition</div>
+                <div class="flow-description">USCIS evaluates the I‑129F petition. They may request additional evidence through an RFE if documentation is incomplete or unclear.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">4</div>
+              <div class="flow-content">
+                <div class="flow-label">Receive NOA2 (Approval)</div>
+                <div class="flow-description">USCIS approves the petition and sends an approval notice. The case is then forwarded to the National Visa Center for processing.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">5</div>
+              <div class="flow-content">
+                <div class="flow-label">NVC Forwards to Embassy</div>
+                <div class="flow-description">The National Visa Center receives the approved petition, assigns a case number, and transfers the file to the U.S. embassy or consulate in the beneficiary's country.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">6</div>
+              <div class="flow-content">
+                <div class="flow-label">Embassy Interview & Visa Issuance</div>
+                <div class="flow-description">The beneficiary completes the DS‑160 form, undergoes a medical exam, and attends an interview at the consulate. If approved, the consulate issues the K‑1 visa.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">7</div>
+              <div class="flow-content">
+                <div class="flow-label">Entry at Port of Entry</div>
+                <div class="flow-description">The K‑1 visa holder travels to the United States and is admitted at a port of entry by Customs and Border Protection officers.</div>
+              </div>
+            </li>
+
+            <li class="flow-step">
+              <div class="flow-number">8</div>
+              <div class="flow-content">
+                <div class="flow-label">Marriage Within 90 Days</div>
+                <div class="flow-description">The couple must marry within 90 days of the K‑1 visa holder's entry into the United States. After marriage, the foreign spouse can apply for adjustment of status to obtain a green card.</div>
+              </div>
+            </li>
+          </ol>
+
+          <div class="callout blue">
+            <div class="icon" aria-hidden="true">i</div>
+            <div>
+              <h3>Important note</h3>
+              <p>Processing times vary by service center, embassy, and individual case circumstances. This flow represents the standard sequence of steps but does not predict timelines or outcomes for any specific case.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card white">
+          <div class="section-title">Where These Terms Appear</div>
+          <div class="intro-text">
+            <p>You'll encounter these acronyms throughout the K‑1 process. NOA1 and NOA2 appear on official USCIS notices. The NVC case number shows up in correspondence from the National Visa Center. CEAC is where you'll complete the DS‑160 form and track visa application status.</p>
+            <p>Understanding these terms makes it easier to follow instructions, track your case, and communicate with government agencies. When you see an unfamiliar acronym in official correspondence or online forums, refer back to this guide for clarification.</p>
+            <p>For step-by-step guidance on completing the I‑129F petition, see the <a href="k1-visa-checklist.html">I-129F checklist</a>. For detailed filing instructions and templates, explore the <a href="index.html#products">K1 Visa Kit</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section">
+        <div class="card white">
+          <p>Understanding these terms is helpful, but having a clear filing guide makes the biggest difference. If you're preparing your petition, the <a href="k1-visa-checklist.html">I-129F checklist</a> can help ensure each section is completed correctly before submission.</p>
+        </div>
+      </section>
+
+<div class="disclaimer-box">
+        <h3>Important Legal Disclaimer</h3>
+        <p>This guide is provided for informational and educational purposes only. It is not legal advice and does not create an attorney‑client relationship. K1 Visa Kit is not a law firm and is not affiliated with USCIS, the Department of State, or any government agency.</p>
+        <p>We do not guarantee that your petition will be approved or that your case will follow the timeline described here. USCIS and the Department of State make all decisions regarding visa petitions. Results vary based on individual circumstances.</p>
+        <p>If you have a complex case, prior denials, criminal history, or concerns about eligibility, consider consulting a licensed immigration attorney. Always verify current requirements on <a href="https://www.uscis.gov" target="_blank" rel="noopener">USCIS.gov</a>.</p>
+      </div>
+
+    </div>
+  </main>
+
+      <footer>
+        <div class="container">
+            <p>&copy; 2026 K1 Visa Kit. Not affiliated with USCIS. All rights reserved.</p>
+            
+            <div class="footer-links">
+                <a href="mailto:support@k1visakit.com">Contact Support</a>
+                <a href="index.html#about">Legal Disclaimer</a>
+                <a href="refund-policy.html">Refund Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+
+            <div class="footer-updated">
+                Last updated: January 2026 | Current for 2026 USCIS forms
+            </div>
+        </div>
+    </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById('mainNav');
+        nav.classList.remove('open');
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

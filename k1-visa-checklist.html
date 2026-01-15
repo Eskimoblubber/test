@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-1 Visa I-129F Checklist (2026) | K1 Visa Kit</title>
+  <meta name="description" content="A free, section-by-section checklist to confirm Form I-129F is complete before filing your K-1 fiancé(e) petition." />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary-blue:#2563eb;
+      --dark-blue:#1e3a8a;
+      --success-green:#10b981;
+
+      --text-dark:#1e293b;
+      --text-medium:#475569;
+      --text-light:#64748b;
+
+      --bg-light:#f8fafc;
+      --bg-white:#ffffff;
+      --border-color:#e2e8f0;
+
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:'Outfit',sans-serif;
+      color:var(--text-dark);
+      line-height:1.7;
+      background:var(--bg-white);
+    }
+    a{color:var(--primary-blue);text-decoration:none;}
+    a:hover{color:var(--dark-blue);}
+
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+    .container-narrow{max-width:860px;margin:0 auto;padding:0 24px;}
+
+                    /* Header with Navigation */
+        header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            white-space: nowrap;
+        }
+
+        /* Main Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            padding: 10px 16px;
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        nav a.active {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .member-login {
+            padding: 10px 18px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            background: transparent;
+            white-space: nowrap;
+        }
+
+        .member-login:hover {
+            color: var(--text-dark);
+            border-color: var(--text-medium);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+            white-space: nowrap;
+        }
+
+        .cta-button:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            color: white;
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            box-shadow: none;
+        }
+
+        .cta-button-secondary:hover {
+            background: var(--primary-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+        .member-access-mobile {
+            display: none;
+        }
+
+        @media (max-width: 968px) {
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                border-bottom: 1px solid var(--border-color);
+                flex-direction: column;
+                padding: 0 16px;
+                gap: 4px;
+                display: flex;
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                pointer-events: none;
+                transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
+            }
+
+            nav.open {
+                max-height: 500px;
+                opacity: 1;
+                pointer-events: auto;
+                padding: 16px;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: left;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .header-actions {
+                display: none;
+            }
+
+            .member-access-mobile {
+                display: block !important;
+            }
+        }
+
+
+
+        
+
+    
+
+    /* Hero */
+    .hero{
+      background:linear-gradient(135deg, #f8fafc 0%, #e8ecf1 100%);
+      padding:64px 0 56px;
+    }
+    .hero .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-weight:700;
+      color:var(--text-medium);
+      background:#fff;
+      border:1px solid var(--border-color);
+      padding:10px 14px;
+      border-radius:999px;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero h1{
+      margin-top:18px;
+      font-size:3rem;
+      font-weight:800;
+      line-height:1.15;
+      letter-spacing:-0.03em;
+    }
+    .hero h1 .highlight{color:var(--primary-blue);}
+    .hero p{
+      margin-top:14px;
+      color:var(--text-medium);
+      font-size:1.12rem;
+      max-width:760px;
+    }
+    .hero .cta-row{
+      margin-top:26px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .meta{
+      margin-top:14px;
+      color:var(--text-light);
+      font-size:0.95rem;
+    }
+
+    .updated-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        padding: 10px 18px;
+        background: var(--success-green);
+        color: white;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+        white-space: nowrap;
+    }
+
+    .updated-badge svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Content */
+    main{padding:56px 0 70px;background:var(--bg-white);}
+    .section{
+      margin-top:34px;
+    }
+    .card{
+      background:var(--bg-light);
+      border:1px solid var(--border-color);
+      border-radius:16px;
+      padding:22px;
+    }
+    .card.white{
+      background:#fff;
+    }
+    .card + .card{margin-top:16px;}
+    .section-title{
+      font-size:1.6rem;
+      font-weight:800;
+      letter-spacing:-0.02em;
+      margin-bottom:10px;
+    }
+    .section-sub{
+      color:var(--text-medium);
+      margin-top:2px;
+    }
+
+    /* Checklist blocks */
+    .checklist{
+      list-style:none;
+      margin-top:16px;
+    }
+    .checklist .check{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      padding:10px 0;
+    }
+    .checklist .box{
+      width:22px; height:22px;
+      border:2px solid var(--border-color);
+      border-radius:6px;
+      flex-shrink:0;
+      margin-top:2px;
+      background:#fff;
+      transition: all 0.2s ease;
+    }
+    .checklist .check:hover .box{
+      border-color:var(--primary-blue);
+    }
+
+    /* Callouts */
+    .callout{
+      display:flex;
+      gap:14px;
+      padding:18px;
+      border-radius:12px;
+      border:1px solid;
+    }
+    .callout.blue{
+      background:rgba(37,99,235,0.05);
+      border-color:rgba(37,99,235,0.2);
+    }
+    .callout.green{
+      background:rgba(16,185,129,0.05);
+      border-color:rgba(16,185,129,0.2);
+    }
+    .callout.red{
+      background:rgba(239,68,68,0.05);
+      border-color:rgba(239,68,68,0.2);
+    }
+    .callout .icon{
+      width:28px; height:28px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      flex-shrink:0;
+      font-weight:800;
+      font-size:1.1rem;
+    }
+    .callout.blue .icon{background:var(--primary-blue);color:#fff;}
+    .callout.green .icon{background:var(--success-green);color:#fff;}
+    .callout.red .icon{background:#ef4444;color:#fff;}
+    .callout h3{
+      font-size:1.1rem;
+      font-weight:700;
+      margin-bottom:6px;
+    }
+    .callout p{
+      font-size:0.95rem;
+      line-height:1.6;
+    }
+
+    /* Two-column layout for promo + disclaimer */
+    .two-col{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:32px;
+      margin-top:40px;
+    }
+    @media(max-width:768px){
+      .two-col{grid-template-columns:1fr;}
+
+    .promo{
+      background:linear-gradient(135deg, #f8fafc 0%, #e8ecf1 100%);
+      padding:32px;
+      border-radius:16px;
+      border:1px solid var(--border-color);
+    }
+    .promo h2{
+      font-size:1.75rem;
+      font-weight:800;
+      margin-bottom:12px;
+      line-height:1.3;
+    }
+    .promo .muted{
+      color:var(--text-medium);
+      margin-bottom:18px;
+    }
+    .promo ul{
+      list-style:none;
+      margin-bottom:24px;
+    }
+    .promo ul li{
+      padding:8px 0 8px 28px;
+      position:relative;
+      color:var(--text-dark);
+    }
+    .promo ul li::before{
+      content:'✓';
+      position:absolute;
+      left:0;
+      color:var(--success-green);
+      font-weight:800;
+    }
+    .product-button{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 24px;
+      background:var(--primary-blue);
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:600;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .product-button:hover{
+      background:var(--dark-blue);
+      transform:translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .small-link{
+      margin-top:14px;
+      font-size:0.9rem;
+      color:var(--text-medium);
+    }
+    .small-link a{font-weight:600;}
+
+    .disclaimer{
+      background:#fff;
+      padding:28px;
+      border-radius:16px;
+      border:1px solid var(--border-color);
+    }
+    .disclaimer h2{
+      font-size:1.3rem;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    .disclaimer p{
+      font-size:0.9rem;
+      color:var(--text-medium);
+      line-height:1.7;
+      margin-bottom:12px;
+    }
+    .disclaimer p:last-child{margin-bottom:0;}
+
+    /* Footer */
+    footer{
+      padding:32px 0;
+      background:var(--text-dark);
+      color:#fff;
+      text-align:center;
+    }
+    .footrow{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:16px;
+      font-size:0.9rem;
+    }
+    }
+    @media(max-width:600px){
+      .footrow{flex-direction:column;text-align:center;}
+    footer a{
+      color:#fff;
+      text-decoration:underline;
+      opacity:0.8;
+    }
+    footer a:hover{opacity:1;}
+
+    .footer-updated {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+    }
+
+        footer {
+            padding: 40px 0;
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        footer a:hover {
+            opacity: 1;
+        }
+
+        .footer-links {
+            margin-top: 16px;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-updated {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+      <!-- Header with Navigation -->
+        <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="10" fill="#2563eb" opacity="0.1"/>
+                        <path d="M12 20L18 26L28 14" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">K1 Visa Kit</span>
+                </a>
+
+                <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="mainNav">
+                    <a href="index.html">Home</a>
+                    <a href="k1-visa-checklist.html" class="active">I-129F Checklist</a>
+                    <a href="k1-visa-acronyms.html">Acronyms</a>
+                    <a href="common-i129f-mistakes-2026.html">Common Mistakes</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="member-login.html" class="member-access-mobile">Member Access</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="member-login.html" class="member-login" title="For existing customers">Member Access</a>
+                    <a href="https://k1visakit.gumroad.com/l/uprod" target="_blank" class="cta-button">Get the Kit</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <section class="hero">
+    <div class="container-narrow">
+      <span class="eyebrow">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Free resource
+      </span>
+
+      <h1>K‑1 Visa <span class="highlight">I‑129F</span> Checklist (2026)</h1>
+      <p>Use this section‑by‑section checklist to confirm Form I‑129F is complete before you sign and mail your petition. Check off items only after you've reviewed that section.</p>
+
+      <div class="updated-badge">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Updated for 2026 USCIS Forms
+      </div>
+
+      <div class="cta-row">
+        <a class="cta-button" href="#checklist">Jump to Checklist</a>
+        <a class="cta-button cta-button-secondary" href="#disclaimer">Legal Disclaimer</a>
+      </div>
+
+      <div class="meta"><strong>Important:</strong> Do not sign or submit Form I‑129F until every applicable item below is complete.</div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container-narrow">
+      <section class="card white" id="checklist">
+        <div class="section-title">What this checklist covers</div>
+        <p class="section-sub"><strong>✓ What to complete:</strong> A quick scan to ensure each I‑129F section is finished and internally consistent.</p>
+        <p class="section-sub"><strong>✗ What this does NOT cover:</strong> How to write statements, which evidence to include, or packet assembly/organization.</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <div class="section-title">Part 1 — Information About You</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Full legal name matches proof of U.S. citizenship</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Date and place of birth entered successfully</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>U.S. citizenship status selected correctly</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Mailing address and physical address reviewed</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Contact information complete and accurate</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 2 — Information About Your Beneficiary</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Beneficiary's full legal name matches passport</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Date and place of birth entered correctly</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Country of citizenship listed accurately</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Current address entered correctly</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Prior marriages (if any) disclosed accurately</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 3 — Other Information</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Prior filings disclosed (if applicable)</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Criminal history questions answered honestly</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>All <strong>"Yes"</strong> answers include required explanations</span></li>
+          </ul>
+
+          <div style="margin-top:16px;">
+            <div class="callout blue">
+              <div class="icon" aria-hidden="true">i</div>
+              <div>
+                <h3>Important note</h3>
+                <p>If you answer <strong>"Yes"</strong> to any question in Part 3, additional documentation may be required. Always confirm current requirements on USCIS.gov.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 4 — Information About Your Relationship</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Date you met in person entered correctly</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Location of in‑person meeting clearly stated</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Petitioner's statement of intent to marry completed</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Beneficiary's statement of intent to marry completed</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Information aligns with evidence you plan to include</span></li>
+          </ul>
+
+          <div style="margin-top:16px;">
+            <div class="callout green">
+              <div class="icon" aria-hidden="true">✓</div>
+              <div>
+                <h3>Tip</h3>
+                <p><strong>Intent‑to‑marry statements:</strong> Both statements should be signed, dated, and original. Simple letters confirming intent to marry within 90 days are typically sufficient.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 5 — Petitioner's Statement, Contact Info, Certification, and Signature</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Petitioner's statement reviewed</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Contact information confirmed</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Form signed and dated in <strong>ink</strong></span></li>
+          </ul>
+
+          <div style="margin-top:16px;">
+            <div class="callout red">
+              <div class="icon" aria-hidden="true">!</div>
+              <div>
+                <h3>Do not submit an unsigned form</h3>
+                <p>Double‑check signature and date fields before you seal the envelope.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 6 — Interpreter's Contact Information (If Applicable)</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Completed only if an interpreter was used</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Interpreter signed and dated (if applicable)</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Marked "N/A" if no interpreter was used</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Part 7 — Preparer's Information (If Applicable)</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Completed only if someone prepared the form for you</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Preparer signed and dated (if applicable)</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Marked "N/A" if no preparer was used</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Final review before filing</div>
+          <ul class="checklist">
+            <li class="check"><span class="box" aria-hidden="true"></span><span>All fields completed or marked "N/A" where appropriate</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>Names and dates consistent across the entire form</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span>No blank required fields</span></li>
+            <li class="check"><span class="box" aria-hidden="true"></span><span><strong>Form version confirmed as current on USCIS.gov</strong></span></li>
+          </ul>
+
+          <div style="margin-top:16px;">
+            <div class="callout blue">
+              <div class="icon" aria-hidden="true">i</div>
+              <div>
+                <h3>Reminder</h3>
+                <p>USCIS updates forms periodically. Verify the current edition at <a href="https://www.uscis.gov/i-129f" target="_blank" rel="noopener"><strong>USCIS.gov/i‑129f</strong></a> before filing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="promo">
+            <h2>Want the "how‑to," templates, and packet assembly?</h2>
+            <p class="muted">This free checklist is a fast "did I miss anything?" scan. The full K1 Visa Kit adds:</p>
+            <ul>
+              <li>Step‑by‑step instructions for each section</li>
+              <li>Editable templates (intent letters, cover letter, etc.)</li>
+              <li>Packet organization + assembly guidance</li>
+              <li>Post‑filing flow & what happens next</li>
+            </ul>
+            
+            <p style="margin-top: 16px; font-size: 0.95rem; color: var(--text-medium); line-height: 1.6;">
+              This checklist pairs with the full K1 Visa Kit, which includes templates, examples, and assembly instructions to guide you from blank forms to a complete, ready-to-file petition.
+            </p>
+
+            <a class="product-button" href="https://k1visakit.gumroad.com/l/uprod" target="_blank" rel="noopener">
+              Learn More About the K1 Visa Kit
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 10h12M12 5l5 5-5 5"/>
+              </svg>
+            </a>
+
+            <div class="small-link">
+              Or start with the Essentials Guide ($17.76) →
+              <a href="https://k1visakit.gumroad.com/l/soawbz" target="_blank" rel="noopener">View it here</a>
+            </div>
+          </div>
+
+          <div class="disclaimer" id="disclaimer">
+            <h2>Important legal disclaimer</h2>
+            <p>This checklist is provided for informational and educational purposes only. It is not legal advice and does not create an attorney‑client relationship. K1 Visa Kit is not a law firm and is not affiliated with USCIS or any government agency.</p>
+            <p>We do not guarantee that your petition will be approved. USCIS makes all decisions regarding visa petitions. Results vary based on individual circumstances.</p>
+            <p>If you have a complex case, prior denials, criminal history, or concerns about eligibility, consider consulting a licensed immigration attorney.</p>
+            <p>Always verify current requirements on <a href="https://www.uscis.gov" target="_blank" rel="noopener">USCIS.gov</a>.</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+      <footer>
+        <div class="container">
+            <p>&copy; 2026 K1 Visa Kit. Not affiliated with USCIS. All rights reserved.</p>
+            
+            <div class="footer-links">
+                <a href="mailto:support@k1visakit.com">Contact Support</a>
+                <a href="index.html#about">Legal Disclaimer</a>
+                <a href="refund-policy.html">Refund Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+
+            <div class="footer-updated">
+                Last updated: January 2026 | Current for 2026 USCIS forms
+            </div>
+        </div>
+    </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle(

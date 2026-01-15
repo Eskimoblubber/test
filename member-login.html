@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login | K1 Visa Kit</title>
+    <meta name="description" content="Access your K1 Visa Kit materials and templates.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --dark-blue: #1e3a8a;
+            --success-green: #10b981;
+            --text-dark: #1e293b;
+            --text-medium: #475569;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: linear-gradient(135deg, #f8fafc 0%, #e8ecf1 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .back-link {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+        }
+
+        .login-card {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .login-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(16,185,129,0.1));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .login-icon svg {
+            width: 32px;
+            height: 32px;
+            color: var(--primary-blue);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            text-align: center;
+            color: var(--text-dark);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-medium);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .info-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .info-box h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .info-box p {
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box strong {
+            color: var(--text-dark);
+        }
+
+        .faq-section {
+            margin-top: 32px;
+        }
+
+        .faq-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .faq-item p {
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .faq-item a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+            width: 100%;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .cta-button:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            padding: 32px 0;
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        footer a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .login-card {
+                padding: 32px 24px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="10" fill="#2563eb" opacity="0.1"/>
+                        <path d="M12 20L18 26L28 14" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">K1 Visa Kit</span>
+                </a>
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-card">
+            <div class="login-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3"/>
+                </svg>
+            </div>
+
+            <h1>Already Purchased?</h1>
+            <p class="subtitle">Access your K1 Visa Kit materials</p>
+
+            <div class="info-box">
+                <h2>📧 Check Your Email</h2>
+                <p>After purchasing through Gumroad, you received an email with direct download links to all your materials.</p>
+                <p><strong>Look for:</strong> An email from Gumroad with the subject line containing "K1 Visa Kit" or "Your purchase"</p>
+                <p><strong>Can't find it?</strong> Check your spam/junk folder or search your inbox for "gumroad.com"</p>
+            </div>
+
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>How do I access my files?</h3>
+                    <p>Click the download links in your Gumroad purchase confirmation email. You can download the files as many times as you need.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>I lost my email. What now?</h3>
+                    <p>Visit <a href="https://gumroad.com/library" target="_blank">gumroad.com/library</a> and log in with the email address you used to purchase. All your purchases will be there.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I need to create an account?</h3>
+                    <p>No account creation is required. Your purchase email contains direct access to all materials. Simply save the email or bookmark the download links.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Need help?</h3>
+                    <p>Contact us at <a href="/cdn-cgi/l/email-protection#b3c0c6c3c3dcc1c7f3d882c5dac0d2d8dac79dd0dcde"><span class="__cf_email__" data-cfemail="1a696f6a6a75686e5a712b6c73697b71736e34797577">[email&#160;protected]</span></a> and include your purchase email address.</p>
+                </div>
+            </div>
+
+            <a href="https://gumroad.com/library" target="_blank" class="cta-button">
+                <span>Go to Gumroad Library</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container"
